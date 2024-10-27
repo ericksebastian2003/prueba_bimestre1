@@ -1,7 +1,28 @@
+<style>
+  ion-img{
+    width: 150px;
+    height:160px;
+
+  }
+  ion-card-title{
+    text-align: center;
+    font-weight: bold;
+  }
+
+  ion-card-content{
+    text-align: justify;
+  }
+  .imagen,ion-button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+  }
+</style>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Biografia
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +30,93 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Biografia</ion-title>
+      
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+      
+  <ion-card>
+    <ion-card-title>Erick Sebastian Caiza Quishpe</ion-card-title>
+    <div class="imagen"><ion-img src="../../assets/perfil.png"></ion-img>
+     </div>
+      <ion-card-content>
+      Erick Sebastian Caiza Quishpe nació el 25 de mayo del 2003 en San Blas , Quito . Desde pequeño demostró habilidades e ibteres por la informatica y la tecnología
+    </ion-card-content>
+  </ion-card>
+    
+  <ion-grid>
+    <ion-row>
+
+    <ion-col>
+  <ion-accordion-group>
+  <ion-accordion value="first">
+    <ion-item slot="header">
+      <ion-label style="font-weight: bold">Mis habilidades</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Comunicacion Efectiva</div>
+    <div class="ion-padding" slot="content">Responsabilidad</div>
+    <div class="ion-padding" slot="content">Respeto</div>
+  </ion-accordion>
+  </ion-accordion-group>
+  </ion-col>
+  <ion-col>
+    <ion-list>
+      <ion-label style="font-weight: bold">Información personal</ion-label>
+      <ion-item>
+        <ion-label>Edad</ion-label>
+        <ion-badge color="primary">21</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>Amigos</ion-label>
+        <ion-badge color="secondary">14</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hermanos</ion-label>
+        <ion-badge color="tertiary">1</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hermanas</ion-label>
+        <ion-badge color="tertiary">2</ion-badge>
+      </ion-item>
+    </ion-list>
+  </ion-col>
+  <ion-col>
+    <ion-list>
+      <ion-label style="font-weight: bold">Alimentos favoritos</ion-label>
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+      <ion-item>
+        <ion-label>Pizza</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item>
+        <ion-label>Papitas</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item>
+        <ion-label>Alitas BBQ</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+      <ion-item>
+        <ion-label>Milkshake</ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+    </ion-list>
+
+  </ion-col>
+    </ion-row>
+</ion-grid>
+
+  <ion-button expand="block" color="danger" (click)="setOpen(true)">Presione aquí</ion-button>
+    <ion-alert 
+
+    [isOpen]="isAlertOpen"
+    header = "AVISO"
+    subheader="No tan importante"
+    message="Has llegado al final de esta biografía"
+    [buttons]="alertButtons"
+    (didDismiss)="setOpen(false)"
+    ></ion-alert>
+
+

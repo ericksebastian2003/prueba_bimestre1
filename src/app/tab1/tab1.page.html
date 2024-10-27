@@ -1,7 +1,29 @@
+<style>
+  ion-img{
+    width: 150px;
+    height:160px;
+
+  }
+  ion-card-title{
+    font-size:24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  ion-card-subtitle{
+    font-size:21px;
+    text-align: center;
+  } 
+  .imagen,ion-button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+</style>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Repositorio de la aplicación
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,7 +34,13 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="imagen">
   <ion-img src="../../assets/perfil.png" alt="Erick Sebastian Caiza Quishpe"></ion-img>
-  <ion-button href="https://github.com/ericksebastian2003/prueba_bimestre1" color:"red">Ir al repositorio</ion-button>
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+</div>
+  <ion-card>
+
+    <ion-card-title>Autor</ion-card-title>
+  <ion-card-subtitle>Erick Sebastian Caiza Quishpe</ion-card-subtitle>
+  </ion-card>
+  <ion-button expand="block" color="danger" href="https://github.com/ericksebastian2003/prueba_bimestre1">Ir al repositorio</ion-button>
 </ion-content>

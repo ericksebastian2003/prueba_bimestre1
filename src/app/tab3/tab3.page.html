@@ -1,8 +1,11 @@
+<style>
+  
+</style>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
-    </ion-title>
+      Calcular días
+        </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +16,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-label>Seleccione una fecha</ion-label>
+<ion-datetime presentation="date" display-format="YYYY-MM-DD" [(ngModel)]="date_one" (ionChange)="calculateDays()"></ion-datetime>
+
+<ion-label>Seleccione otra  fecha</ion-label>
+<ion-datetime display-format="YYYY-MM-DD" [(ngModel)]="date_two" (ionChange)="calculateDays()" presentation="date"></ion-datetime>
+
+
+<ion-item *ngIf="differenceInDays !==null">
+  <ion-label>Dias de diferencias : {{differenceInDays}}</ion-label>
+</ion-item>
 </ion-content>

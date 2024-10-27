@@ -1,0 +1,20 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Crear archivo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-label position="stacked">Introducir tu texto</ion-label>
+<ion-textarea [(ngModel)]="userText"></ion-textarea>
+<ion-button color="danger" expand="block" (click)="saveFile()">Guardar en un archivo</ion-button>
+
+</ion-content>
