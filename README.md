@@ -1,12 +1,12 @@
 # APLICACIÓN - PRUEBA B1
 # MULTI-PESTAÑAS
 
-Esta aplicación abarca de
+Esta aplicación posee diversas funcionalidades que se describen a continuación:
 
 ## Estructura de la aplicación
 
 La aplicación consta de los siguientes tabs:
-
+- `Splash Screen`:Al abrir la aplicación , se mostrará el splash screen de la aplicación
 - `Foto + Repositorio`: Contiene una foto del autor de la aplicación y un botón que dirige al repositorio donde se aloja la aplicación.
 - `Biografía`: Contiene una brev descripción sobre el autor de la aplicación : hobbies , alimentos favoritos e intereses.
 - `Calcular días`: En este tab , mediante datepickers se solicita dos fechas para calcular los días que existen de diferencia entre ellos.
