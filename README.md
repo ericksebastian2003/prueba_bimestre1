@@ -12,6 +12,15 @@ La aplicación consta de los siguientes tabs:
 - `Calcular días`: En este tab , mediante datepickers se solicita dos fechas para calcular los días que existen de diferencia entre ellos.
 - `Crear archivo`: En este tab , mediante un textarea se solicitará al usuario que ingrese texto y con un botón funcional se podrá guardar en un archivo `.txt`. 
 - `Calcular ecuación cuadrática`: En este tab , se le permite al usuario el cálculo de la ecuación cuadrática solcitando los valores a,b y c. 
+## Capturas
+![](./capturas/splash.png)
+![](./capturas/inicio.png)
+![](./capturas/biografia.png)
+![](./capturas/fechas.png)
+![](./capturas/ecuacion.png)
+![](./capturas/archivo.png)
+
+
 
 ## Autor
 Esta aplicación fue creado por  Erick Caiza
